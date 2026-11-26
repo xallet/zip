@@ -1,4 +1,4 @@
-module github.com/webong/ext/adapters/evm
+module github.com/xallet/zip/evm
 
 go 1.25.0
 

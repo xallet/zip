@@ -1,0 +1,37 @@
+go 1.25.0
+
+use (
+	./evm
+	./git
+	./wasm
+)
+
+// ext publishes no tags for several modules these adapters need (pkg/ext-go/core,
+// pkg/ext-go/cengine, src/ctn/*, src/cto/sandbox), and its tagged modules require them.
+// Pin every ext module to one ext commit until ext tags releases; then delete this block.
+replace github.com/webong/ext/cmd/ext => github.com/webong/ext/cmd/ext v0.0.0-20261126231136-89a937e4307d
+replace github.com/webong/ext/examples/ledger/go => github.com/webong/ext/examples/ledger/go v0.0.0-20261126231136-89a937e4307d
+replace github.com/webong/ext/examples/plugins/go => github.com/webong/ext/examples/plugins/go v0.0.0-20261126231136-89a937e4307d
+replace github.com/webong/ext/examples/web/go => github.com/webong/ext/examples/web/go v0.0.0-20261126231136-89a937e4307d
+replace github.com/webong/ext/pkg/ext-go => github.com/webong/ext/pkg/ext-go v0.12.1-0.20261126231136-89a937e4307d
+replace github.com/webong/ext/pkg/ext-go/c2goengine => github.com/webong/ext/pkg/ext-go/c2goengine v0.4.1-0.20261126231136-89a937e4307d
+replace github.com/webong/ext/pkg/ext-go/cengine => github.com/webong/ext/pkg/ext-go/cengine v0.0.0-20261126231136-89a937e4307d
+replace github.com/webong/ext/pkg/ext-go/cgoengine => github.com/webong/ext/pkg/ext-go/cgoengine v0.4.2-0.20261126231136-89a937e4307d
+replace github.com/webong/ext/pkg/ext-go/core => github.com/webong/ext/pkg/ext-go/core v0.0.0-20261126231136-89a937e4307d
+replace github.com/webong/ext/pkg/ext-go/engine => github.com/webong/ext/pkg/ext-go/engine v0.4.1-0.20261126231136-89a937e4307d
+replace github.com/webong/ext/pkg/ext-go/hashicorp => github.com/webong/ext/pkg/ext-go/hashicorp v0.3.3-0.20261126231136-89a937e4307d
+replace github.com/webong/ext/pkg/ext-go/wasm => github.com/webong/ext/pkg/ext-go/wasm v0.5.1-0.20261126231136-89a937e4307d
+replace github.com/webong/ext/pkg/ext-go/yaegi => github.com/webong/ext/pkg/ext-go/yaegi v0.1.1-0.20261126231136-89a937e4307d
+replace github.com/webong/ext/res/int => github.com/webong/ext/res/int v0.2.1-0.20261126231136-89a937e4307d
+replace github.com/webong/ext/res/system => github.com/webong/ext/res/system v0.5.2-0.20261126231136-89a937e4307d
+replace github.com/webong/ext/res/system/service/network/linux/guest => github.com/webong/ext/res/system/service/network/linux/guest v0.0.0-20261126231136-89a937e4307d
+replace github.com/webong/ext/res/web/host => github.com/webong/ext/res/web/host v0.2.2-0.20261126231136-89a937e4307d
+replace github.com/webong/ext/src/ctn => github.com/webong/ext/src/ctn v0.0.0-20261126231136-89a937e4307d
+replace github.com/webong/ext/src/ctn/inference => github.com/webong/ext/src/ctn/inference v0.0.0-20261126231136-89a937e4307d
+replace github.com/webong/ext/src/ctn/model => github.com/webong/ext/src/ctn/model v0.0.0-20261126231136-89a937e4307d
+replace github.com/webong/ext/src/ctn/perception => github.com/webong/ext/src/ctn/perception v0.0.0-20261126231136-89a937e4307d
+replace github.com/webong/ext/src/ctn/realtime => github.com/webong/ext/src/ctn/realtime v0.0.0-20261126231136-89a937e4307d
+replace github.com/webong/ext/src/cto => github.com/webong/ext/src/cto v0.0.0-20261126231136-89a937e4307d
+replace github.com/webong/ext/src/cto/sandbox => github.com/webong/ext/src/cto/sandbox v0.0.0-20261126231136-89a937e4307d
+replace github.com/webong/ext/src/ctx => github.com/webong/ext/src/ctx v0.0.0-20261126231136-89a937e4307d
+replace github.com/webong/ext/tests/crosslang => github.com/webong/ext/tests/crosslang v0.0.0-20261126231136-89a937e4307d

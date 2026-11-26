@@ -1,4 +1,4 @@
-module github.com/webong/ext/adapters/git
+module github.com/xallet/zip/git
 
 go 1.23.0
 

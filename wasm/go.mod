@@ -1,4 +1,4 @@
-module github.com/webong/ext/adapters/wasm
+module github.com/xallet/zip/wasm
 
 go 1.25.0
 
