@@ -1,4 +1,4 @@
-module github.com/xallet/zip/evm
+module xallet.app/zip/evm
 
 go 1.25.0
 

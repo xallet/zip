@@ -1,4 +1,4 @@
-module github.com/xallet/zip/wasm
+module xallet.app/zip/wasm
 
 go 1.25.0
 

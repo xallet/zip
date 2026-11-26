@@ -1,4 +1,4 @@
-module github.com/xallet/zip/git
+module xallet.app/zip/git
 
 go 1.23.0
 
